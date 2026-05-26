@@ -69,6 +69,8 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
 }
 
 .result__video-container {
@@ -85,7 +87,7 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: start;
   gap: 40px;
 }
 
@@ -154,9 +156,35 @@ ol {
   color:#fff;
 }
 
+.search-form__fieldset {
+  border: 0;
+  
+}
+
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
+  
 }
 
+.search-form__checkbox {
+  background-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
 
